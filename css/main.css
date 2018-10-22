@@ -17,6 +17,9 @@ justify-content: space-around;
 .just-between{
     justify-content: space-between;
 }
+.just-center{
+    justify-content: center;
+}
 .just-around{
 justify-content: space-around;
 }
@@ -59,4 +62,7 @@ justify-content: space-around;
 .mouse-over:hover{
     cursor: pointer;
     color: red;
+}
+.del-user-container{
+    max-width: 320px;
 }

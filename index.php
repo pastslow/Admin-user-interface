@@ -21,8 +21,13 @@
 
     <div id="users" class="users">
     </div>
-   <button onclick="loadUsersFromServer()"></button>
+    <div id="deleteModal">
+    <?php
+    include("deleteUserModal.php");
+    ?>
+    </div>
 
 </body>
 <script src="js/loadUsers.js"></script>
+<script src="js/deleteUsers.js"></script>
 </html>
