@@ -26,8 +26,16 @@
     include("deleteUserModal.php");
     ?>
     </div>
+    <div id="editModal">
+    <?php
+    include("editUserModal.php");
+    ?>
+    </div>
+
 
 </body>
+<script src="js/jobs.js"></script>
+<script src="js/edit.js"></script>
 <script src="js/loadUsers.js"></script>
 <script src="js/deleteUsers.js"></script>
 </html>

@@ -66,3 +66,53 @@ justify-content: space-around;
 .del-user-container{
     max-width: 320px;
 }
+.input{
+    width: 32%;
+    border: 0px;
+}
+.img-job{
+    width: 25px;
+    height: 25px;
+}
+
+.img-job2{
+    width: 80px;
+    height: 75px;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.job-div{
+    opacity: 0.5;
+}
+
+.job-div:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.job-btn{
+    border: 0px;
+    background: white;
+}
+.age-input{
+    text-align: center;
+    border: 0px;
+    width: 40px;
+}
+.remove-btn{
+    border: 0px;
+    background: white;
+}
+
+.remove-btn:hover{
+    color: red;
+}
+
+.cursor:hover{
+cursor: pointer;
+}
+.margin-right-4{
+    margin-right: 4px;
+}

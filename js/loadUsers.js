@@ -14,17 +14,25 @@ fetch("http://localhost/listUsers.php")
 function loadUsersFromServer(myUsers) {
     for (i = 0; i < myUsers.length; i++) {
         //========================= User Container ==========================//
-        elem += `<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 user-table" id="userDivId${[i]}">`;
+        elem += `<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 user-table"
+         id="userDivId${[i]}">`;
         //=========== Container for values of user and buttons ==============//
         elem += `<div class="d-flex just-evently border-bottom">`;
         //=========================== Edit btn ==============================//
         elem += `<div>`;
-        elem += `<span class="mouse-over glyphicon glyphicon-pencil"></span>`;
+        elem += `<span  data-toggle="modal" data-target="#modalEdit"
+         class="mouse-over glyphicon glyphicon-pencil"
+         onclick="changeValuesOnEditPopUp('userDivId${[i]}','firstNameId${i}',
+         'secondNameId${i}', 'genderImgId${i}', 'imgId${i}', 'jobId${i}', 
+         'userId${i}', 'ageId${i}')">
+         </span>`;
         elem += `</div>`;
         //============== First name, second name and gender =================//
         elem += `<div class="d-flex font-bold">`;
-        elem += `<span id="firstNameId${i}">${myUsers[i].firstname}&nbsp</span>`;
-        elem += `<span id="secondNameId${i}">${myUsers[i].secondname}&nbsp</span>`;
+        elem += `<span class="margin-right-4" id="firstNameId${i}">
+        ${myUsers[i].firstname}</span>`;
+        elem += `<span class="margin-right-4" id="secondNameId${i}">
+        ${myUsers[i].secondname}</span>`;
         elem += `<img id="genderImgId${i}"
         class="img-18"
         src="img/user/${myUsers[i].gender}.png" 
@@ -32,10 +40,10 @@ function loadUsersFromServer(myUsers) {
         elem += `</div>`;
         //========================== Remove btn =============================//
         elem += `<div>`;
-        elem += `<span data-toggle="modal"
-        onclick ="deleteContent('userDivId${[i]}','firstNameId${i}',
+        elem += `<span onclick ="deleteContent('userDivId${[i]}','firstNameId${i}',
             'secondNameId${i}', 'genderImgId${i}', 'imgId${i}', 'jobId${i}', 
             'userId${i}', 'ageId${i}')"
+            data-toggle="modal"
         data-target="#modalDelete"
         class="mouse-over glyphicon glyphicon-remove">
         </span>`;
