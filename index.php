@@ -16,7 +16,7 @@
 <body>
     <div class="nav">
         <h1 class="text-white">Admin interface</h1>
-        <h1 class="text-success glyphicon glyphicon-plus"></h1>
+        <h1 data-toggle="modal" data-target="#modalAdd" class="text-success glyphicon glyphicon-plus"></h1>
     </div>
 
     <div id="users" class="users">
@@ -32,10 +32,17 @@
     ?>
     </div>
 
+    <div>
+    <?php
+    include("addUserModal.php");
+    ?>
+    </div>
+
 
 </body>
 <script src="js/jobs.js"></script>
 <script src="js/edit.js"></script>
 <script src="js/loadUsers.js"></script>
 <script src="js/deleteUsers.js"></script>
+<script src="js/addNewUser.js"></script>
 </html>
