@@ -15,8 +15,8 @@
         <!-- ============== Container for values of user ================== -->
         <div id="addUserValuesContainer">
             <div class="d-flex just-evently">
-                <input value="First Name" class="input" id="addFirstName" type="text">
-                <input value="Second Name" class="input" id="addSecondName" type="text">
+                <input placeholder="First Name" class="input" id="addFirstName" type="text">
+                <input placeholder="Second Name" class="input" id="addSecondName" type="text">
             </div>
             <div class="d-flex just-evently">
                 <div>
@@ -143,7 +143,7 @@
         </button>
         </div>
         <span class="font-bold">Age: </span>
-        <input id="addAge" class="age-input" type="text" name="" value="16">
+        <input id="addAge" class="age-input" type="text" name="" placeholder="16">
         </div>
         <!-- ================ End of user container ======================= -->
         </div>

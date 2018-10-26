@@ -9,7 +9,7 @@ class User
     public $job;
     public $age;
 }
-$sql = "SELECT * FROM webpage_admin.users";
+$sql = "SELECT * FROM users ORDER BY id DESC LIMIT 1";
 $result = $conn->query($sql);
 $users = array();
 while ($row = $result->fetch_assoc()) {
@@ -24,4 +24,5 @@ while ($row = $result->fetch_assoc()) {
 }
 $userJason = json_encode($users);
 echo $userJason;
+
 ?>

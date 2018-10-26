@@ -10,9 +10,9 @@ fetch("http://localhost/listUsers.php")
         var myUsers = data;
         loadUsersFromServer(myUsers);
     });
-
 function loadUsersFromServer(myUsers) {
     for (i = 0; i < myUsers.length; i++) {
+        j = myUsers.length;
         //========================= User Container ==========================//
         elem += `<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 user-table"
          id="userDivId${[i]}">`;
